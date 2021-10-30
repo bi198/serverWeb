@@ -12,7 +12,7 @@ app.get("/api/products/:id", (req, res) => {
   if (product) {
     res.send(product);
   } else {
-    res.status(404).send({ msg: "Product NOT FOUND !!" });
+    res.status(404).send({ msg: "PRODUCT NOT FOUND !!" });
   }
 });
 
@@ -23,4 +23,5 @@ app.get("/api/products", (req, res) => {
 
 app.listen(5000, () => {
   console.log("Server Started at http://localhost:5000/");
+  console.log("Server Data at http://localhost:5000/api/products");
 });
