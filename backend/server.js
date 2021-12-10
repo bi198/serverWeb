@@ -14,7 +14,7 @@ import Product from "./models/productModel.js";
 import bcrypt from "bcryptjs";
 const { MongoClient } = require("mongodb");
 
-dotenv.config();
+// dotenv.config();
 // MONGODB
 const uri =
   "mongodb+srv://admin:123@cluster0.wrhwg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
