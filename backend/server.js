@@ -449,7 +449,7 @@ app.post("/api/orders/create", async (req, res) => {
   }
 });
 // Default Port
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
   // console.log("Server started at http://localhost:5000");
   // console.log("Server Products at http://localhost:5000/api/getAll/products");
   // console.log("Server Users at http://localhost:5000/api/users");
